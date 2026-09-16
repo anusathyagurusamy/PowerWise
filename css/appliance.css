@@ -1,0 +1,661 @@
+/* ==========================================
+   PowerWise Appliance Page CSS
+   Green + White Theme
+========================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+body{
+
+    background:#f5f7fb;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* ==========================================
+   Navbar
+========================================== */
+
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+
+
+.nav-link{
+
+    font-weight:500;
+
+    margin-left:15px;
+
+    transition:.3s;
+
+}
+
+
+
+.nav-link:hover{
+
+    color:#ffc107 !important;
+
+}
+
+
+
+
+/* ==========================================
+   Hero Section
+========================================== */
+
+
+.appliance-hero{
+
+
+    min-height:450px;
+
+    display:flex;
+
+    align-items:center;
+
+    color:white;
+
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    animation:heroZoom 8s infinite alternate;
+
+
+
+}
+
+
+
+
+.appliance-hero h1{
+
+
+    font-size:48px;
+
+    font-weight:700;
+
+    animation:fadeLeft 1s;
+
+}
+
+
+
+.appliance-hero p{
+
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    animation:fadeLeft 1.3s;
+
+}
+
+
+
+
+/* ==========================================
+   Hero Image
+========================================== */
+
+
+.hero-appliance-img{
+
+
+    width:350px;
+
+
+    animation:floatImage 4s infinite ease-in-out;
+
+
+}
+
+
+
+/* ==========================================
+   Cards
+========================================== */
+
+
+.appliance-card{
+
+
+    border:none;
+
+
+    border-radius:20px;
+
+
+    overflow:hidden;
+
+
+    transition:.4s;
+
+
+    animation:fadeUp 1s;
+
+
+}
+
+
+
+.appliance-card:hover{
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:0 15px 35px rgba(25,135,84,.2);
+
+
+}
+
+
+
+
+/* ==========================================
+   Appliance Image Preview
+========================================== */
+
+
+.appliance-image{
+
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:contain;
+
+
+    transition:.4s;
+
+
+    animation:pulse 3s infinite;
+
+
+}
+
+
+
+.appliance-image:hover{
+
+
+    transform:scale(1.1);
+
+
+}
+
+
+
+
+#selectedName{
+
+
+    color:#198754;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* ==========================================
+   Form
+========================================== */
+
+
+.form-control,
+
+.form-select{
+
+
+    border-radius:12px;
+
+
+    padding:12px;
+
+
+    border:1px solid #ddd;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.form-control:focus,
+
+.form-select:focus{
+
+
+    border-color:#198754;
+
+
+    box-shadow:0 0 10px rgba(25,135,84,.25);
+
+
+}
+
+
+
+
+
+.btn-success{
+
+
+    padding:12px;
+
+
+    border-radius:12px;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.btn-success:hover{
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+/* ==========================================
+   Table
+========================================== */
+
+
+.table{
+
+
+    margin-bottom:0;
+
+
+}
+
+
+
+.table th{
+
+
+    vertical-align:middle;
+
+}
+
+
+
+.table td{
+
+
+    vertical-align:middle;
+
+
+}
+
+
+
+
+
+/* ==========================================
+   Animations
+========================================== */
+
+
+
+@keyframes floatImage{
+
+
+0%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+
+100%{
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+@keyframes pulse{
+
+
+0%{
+
+transform:scale(1);
+
+}
+
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+
+100%{
+
+transform:scale(1);
+
+}
+
+
+}
+
+
+
+
+
+@keyframes fadeUp{
+
+
+from{
+
+
+opacity:0;
+
+transform:translateY(50px);
+
+
+}
+
+
+to{
+
+
+opacity:1;
+
+transform:translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+@keyframes fadeLeft{
+
+
+from{
+
+
+opacity:0;
+
+transform:translateX(-50px);
+
+
+}
+
+
+to{
+
+
+opacity:1;
+
+transform:translateX(0);
+
+
+}
+
+
+}
+
+
+
+
+
+@keyframes heroZoom{
+
+
+from{
+
+
+background-size:100%;
+
+
+}
+
+
+to{
+
+
+background-size:110%;
+
+
+}
+
+
+}
+
+
+
+
+/* ==========================================
+   Footer
+========================================== */
+
+
+footer{
+
+
+margin-top:50px;
+
+
+}
+
+
+
+footer h5{
+
+
+font-weight:700;
+
+
+}
+/* ==========================
+   Add Appliance Section
+========================== */
+
+.add-appliance-section{
+
+    background-image: url("../images/img.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    padding: 80px 0;
+
+    position: relative;
+
+}
+
+
+/* Dark/green overlay */
+
+.add-appliance-section::before{
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(20, 90, 50, 0.65);
+
+}
+
+
+.add-appliance-section .container{
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* Form Card */
+
+.add-card{
+
+    background: rgba(255,255,255,0.95);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+
+    backdrop-filter: blur(6px);
+
+}
+
+
+
+
+
+/* ==========================================
+   Responsive
+========================================== */
+
+
+@media(max-width:992px){
+
+
+
+.appliance-hero{
+
+
+text-align:center;
+
+
+}
+
+
+
+.hero-appliance-img{
+
+
+margin-top:30px;
+
+
+}
+
+
+
+
+}
+
+
+
+
+@media(max-width:576px){
+
+
+
+.appliance-hero h1{
+
+
+font-size:32px;
+
+
+}
+
+
+
+.appliance-hero p{
+
+
+font-size:15px;
+
+
+}
+
+
+
+.appliance-image{
+
+
+width:130px;
+
+height:130px;
+
+
+}
+
+
+
+}

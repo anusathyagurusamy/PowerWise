@@ -1,0 +1,501 @@
+/* ==========================================
+   PowerWise Report Page
+   report.css
+========================================== */
+
+
+/* ===============================
+   Global
+=============================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+body{
+
+    background:#f4fff7;
+
+    font-family:
+    'Poppins',
+    sans-serif;
+
+    color:#333;
+
+}
+
+
+
+/* ===============================
+   Navbar
+=============================== */
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+
+
+.nav-link{
+
+    font-weight:500;
+
+    margin-left:15px;
+
+    transition:.3s;
+
+}
+
+
+
+.nav-link:hover{
+
+    color:#ffc107 !important;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   Hero Section
+=============================== */
+
+.report-hero{
+
+    min-height:320px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    background-image:
+
+    linear-gradient(
+    rgba(25,135,84,0.75),
+    rgba(25,135,84,0.75)
+    ),
+
+    url("../images/report-bg.png");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+}
+
+
+
+.report-hero h1{
+
+    font-size:48px;
+
+    animation:
+    fadeDown 1s ease;
+
+}
+
+
+
+.report-hero p{
+
+    font-size:18px;
+
+    animation:
+    fadeUp 1.2s ease;
+
+}
+
+
+
+/* ===============================
+   Animation
+=============================== */
+
+
+@keyframes fadeDown{
+
+
+from{
+
+    opacity:0;
+
+    transform:
+    translateY(-40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+
+}
+
+
+}
+
+
+
+@keyframes fadeUp{
+
+
+from{
+
+    opacity:0;
+
+    transform:
+    translateY(40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+
+}
+
+
+}
+
+
+
+/* ===============================
+   Report Cards
+=============================== */
+
+
+.report-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    background:white;
+
+    transition:
+    0.4s;
+
+    overflow:hidden;
+
+}
+
+
+
+.report-card:hover{
+
+
+    transform:
+    translateY(-10px);
+
+
+    box-shadow:
+    0 15px 35px rgba(25,135,84,0.25);
+
+
+}
+
+
+
+.report-card i{
+
+
+    font-size:40px;
+
+    color:#198754;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* ===============================
+   Summary Numbers
+=============================== */
+
+
+.report-card h3{
+
+    color:#198754;
+
+    font-weight:700;
+
+}
+
+
+
+.report-card h5{
+
+    color:#555;
+
+}
+
+
+
+
+
+/* ===============================
+   Budget Progress
+=============================== */
+
+
+.progress{
+
+    height:28px;
+
+    border-radius:20px;
+
+    background:#d8f3df;
+
+    overflow:hidden;
+
+}
+
+
+
+.progress-bar{
+
+    font-weight:bold;
+
+    transition:
+    width 1s ease;
+
+}
+
+
+
+
+
+#budgetStatus{
+
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* ===============================
+ Highest Appliance
+=============================== */
+
+
+#highestAppliance{
+
+
+    background:#f0fff5;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    border-left:
+    6px solid #198754;
+
+
+    animation:
+    fadeUp 0.8s ease;
+
+}
+
+
+
+#highestAppliance img{
+
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:contain;
+
+}
+
+
+
+
+
+/* ===============================
+ Chart Section
+=============================== */
+
+
+#consumptionChart{
+
+
+    max-height:350px;
+
+}
+
+
+
+
+
+/* ===============================
+ Suggestions
+=============================== */
+
+
+#reportSuggestions{
+
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+
+#reportSuggestions li{
+
+
+    background:#f4fff7;
+
+    margin-bottom:15px;
+
+    padding:15px;
+
+
+    border-radius:12px;
+
+
+    border-left:
+    5px solid #198754;
+
+
+    transition:
+    0.3s;
+
+
+}
+
+
+
+#reportSuggestions li:hover{
+
+
+    transform:
+    translateX(8px);
+
+
+    background:#e8f8ed;
+
+
+}
+
+
+
+
+
+/* ===============================
+ Saving Tips Cards
+=============================== */
+
+
+.container .card{
+
+
+    border-radius:18px;
+
+}
+
+
+
+.row .card:hover{
+
+
+    transform:
+    translateY(-8px);
+
+
+    transition:
+    0.3s;
+
+
+}
+
+
+
+
+
+/* ===============================
+ Footer
+=============================== */
+
+
+footer{
+
+
+    margin-top:50px;
+
+    font-size:16px;
+
+
+}
+
+
+
+
+
+/* ===============================
+ Responsive
+=============================== */
+
+
+@media(max-width:768px){
+
+
+.report-hero h1{
+
+    font-size:34px;
+
+}
+
+
+
+.report-hero{
+
+    min-height:250px;
+
+}
+
+
+
+.report-card{
+
+    margin-bottom:15px;
+
+}
+
+
+}

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+PowerWise | Profile
+</title>
+
+
+<!-- Bootstrap -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+
+<!-- Bootstrap Icons -->
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+<!-- CSS -->
+
+<link rel="stylesheet"
+href="css/profile.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- ===========================
+Navbar
+=========================== -->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+
+<div class="container">
+
+
+<a class="navbar-brand fw-bold"
+href="index.html">
+
+⚡ PowerWise
+
+</a>
+
+
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+
+<span class="navbar-toggler-icon"></span>
+
+
+</button>
+
+
+
+
+
+<div class="collapse navbar-collapse"
+id="menu">
+
+
+<ul class="navbar-nav ms-auto">
+
+
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="index.html">
+
+Dashboard
+
+</a>
+
+</li>
+
+
+
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="appliance.html">
+
+Appliances
+
+</a>
+
+</li>
+
+
+
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="report.html">
+
+Reports
+
+</a>
+
+</li>
+
+
+
+
+<li class="nav-item">
+
+<a class="nav-link active"
+href="profile.html">
+
+Profile
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+
+
+
+<!-- ===========================
+Hero Section
+=========================== -->
+
+
+<section class="profile-hero">
+
+
+<div class="container text-center">
+
+
+<h1>
+
+My Profile
+
+</h1>
+
+
+<p>
+
+Manage your account and electricity budget
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ===========================
+Profile Card
+=========================== -->
+
+
+<section class="container py-5">
+
+
+<div class="row justify-content-center">
+
+
+<div class="col-lg-6">
+
+
+<div class="card profile-card shadow">
+
+
+
+<div class="card-body text-center">
+
+
+
+<div class="profile-icon">
+
+
+<i class="bi bi-person-circle"></i>
+
+
+</div>
+
+
+
+
+
+<h3 id="profileName">
+
+User Name
+
+</h3>
+
+
+
+<p id="profileEmail">
+
+user@gmail.com
+
+</p>
+
+
+
+<hr>
+
+
+
+
+
+<h5>
+
+Account Information
+
+</h5>
+
+
+
+<div class="info-box">
+
+
+<p>
+
+<i class="bi bi-person-fill"></i>
+
+Name:
+
+<span id="userName">
+
+-
+
+</span>
+
+</p>
+
+
+
+<p>
+
+<i class="bi bi-envelope-fill"></i>
+
+Email:
+
+<span id="userEmail">
+
+-
+
+</span>
+
+</p>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ===========================
+Budget Section
+=========================== -->
+
+
+<section class="container mb-5">
+
+
+<div class="row justify-content-center">
+
+
+<div class="col-lg-6">
+
+
+<div class="card budget-card shadow">
+
+
+
+<div class="card-body">
+
+
+<h3 class="text-center">
+
+<i class="bi bi-wallet2"></i>
+
+Monthly Budget
+
+</h3>
+
+
+
+
+<div class="input-group mt-4">
+
+
+<span class="input-group-text">
+
+₹
+
+</span>
+
+
+<input type="number"
+
+id="budgetInput"
+
+class="form-control"
+
+placeholder="Enter budget">
+
+
+</div>
+
+
+
+
+
+<button
+
+class="btn btn-success w-100 mt-3"
+
+id="saveBudget">
+
+
+Save Budget
+
+</button>
+
+
+
+
+
+<p class="text-center mt-3"
+
+id="budgetMessage">
+
+</p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ===========================
+Account Actions
+=========================== -->
+
+
+<section class="container mb-5">
+
+
+<div class="card shadow action-card">
+
+
+<div class="card-body text-center">
+
+
+<h3>
+
+Account Actions
+
+</h3>
+
+
+
+<button
+
+class="btn btn-outline-danger mt-3"
+
+id="logoutBtn">
+
+
+<i class="bi bi-box-arrow-right"></i>
+
+Logout
+
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+
+
+<footer class="bg-success text-white text-center p-3">
+
+
+PowerWise © 2026
+
+
+</footer>
+
+
+
+
+
+
+
+<script src="js/profile.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+
+</html>

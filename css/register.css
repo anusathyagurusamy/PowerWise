@@ -1,0 +1,393 @@
+/* =====================================
+   Google Font
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =====================================
+   Global
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    overflow-x:hidden;
+}
+
+/* =====================================
+   Animated Background
+===================================== */
+
+.register-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(-45deg,#198754,#20c997,#66d9a3,#198754);
+
+    background-size:400% 400%;
+
+    animation:gradientMove 10s ease infinite;
+
+}
+
+@keyframes gradientMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* =====================================
+   Left Side
+===================================== */
+
+.hero-icon{
+
+    font-size:140px;
+
+    color:#ffffff;
+
+    animation:float 3s ease-in-out infinite;
+
+    text-shadow:0 0 20px rgba(255,255,255,.5);
+
+}
+
+.register-section h1{
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+.register-section p{
+
+    color:white;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* =====================================
+   Register Card
+===================================== */
+
+.register-card{
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    animation:slideRight 1s ease;
+
+    transition:.4s;
+
+}
+
+.register-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+}
+
+/* =====================================
+   Register Icon
+===================================== */
+
+.register-icon{
+
+    font-size:70px;
+
+    color:#198754;
+
+}
+
+/* =====================================
+   Labels
+===================================== */
+
+label{
+
+    font-weight:600;
+
+    margin-bottom:6px;
+
+}
+
+/* =====================================
+   Inputs
+===================================== */
+
+.form-control{
+
+    height:50px;
+
+    border-radius:10px;
+
+    border:1px solid #ced4da;
+
+    transition:.3s;
+
+}
+
+.form-control:focus{
+
+    border-color:#198754;
+
+    box-shadow:0 0 10px rgba(25,135,84,.25);
+
+}
+
+.input-group-text{
+
+    background:#198754;
+
+    color:white;
+
+    border:none;
+
+}
+
+/* =====================================
+   Password Strength
+===================================== */
+
+.progress{
+
+    height:8px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.progress-bar{
+
+    transition:.4s;
+
+}
+
+/* =====================================
+   Buttons
+===================================== */
+
+.btn-primary{
+
+    background:#198754;
+
+    border:none;
+
+    height:50px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#157347;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline-secondary{
+
+    border-radius:0 10px 10px 0;
+
+}
+
+/* =====================================
+   Links
+===================================== */
+
+a{
+
+    color:#198754;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+a:hover{
+
+    color:#157347;
+
+}
+
+/* =====================================
+   Checkbox
+===================================== */
+
+.form-check-input:checked{
+
+    background:#198754;
+
+    border-color:#198754;
+
+}
+
+/* =====================================
+   Floating Animation
+===================================== */
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* =====================================
+   Slide Animation
+===================================== */
+
+@keyframes slideRight{
+
+from{
+
+opacity:0;
+
+transform:translateX(80px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media(max-width:992px){
+
+.hero-icon{
+
+font-size:100px;
+
+}
+
+.register-card{
+
+margin-top:40px;
+
+padding:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.register-section{
+
+padding:40px 0;
+
+}
+
+.hero-icon{
+
+font-size:80px;
+
+}
+
+.register-section h1{
+
+font-size:36px;
+
+}
+
+.register-section p{
+
+font-size:16px;
+
+}
+
+.register-card{
+
+padding:25px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-icon{
+
+font-size:70px;
+
+}
+
+.register-section h1{
+
+font-size:30px;
+
+}
+
+.register-card{
+
+padding:20px;
+
+border-radius:18px;
+
+}
+
+.register-icon{
+
+font-size:55px;
+
+}
+
+}

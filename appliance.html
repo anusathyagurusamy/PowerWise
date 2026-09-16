@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PowerWise | Appliances</title>
+
+
+<!-- Bootstrap -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- Bootstrap Icons -->
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+<!-- Custom CSS -->
+
+<link rel="stylesheet" href="css/appliance.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
+
+
+<div class="container">
+
+
+<a class="navbar-brand fw-bold" href="index.html">
+
+<i class="bi bi-lightning-charge-fill"></i>
+
+PowerWise
+
+</a>
+
+
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+
+<div class="collapse navbar-collapse" id="menu">
+
+
+<ul class="navbar-nav ms-auto">
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="index.html">
+
+Dashboard
+
+</a>
+
+</li>
+
+
+<li class="nav-item">
+
+<a class="nav-link active" href="appliance.html">
+
+Appliances
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="report.html">
+
+Reports
+
+</a>
+
+</li>
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="profile.html">
+
+Profile
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+</nav>
+
+
+
+<!-- ================= HERO ================= -->
+<section class="add-appliance-section">
+
+    <div class="container">
+
+<section class="appliance-hero">
+
+
+<div class="container">
+
+
+<div class="row align-items-center">
+
+
+<div class="col-lg-7">
+
+
+<h1>
+
+🏠 Manage Your Appliances
+
+</h1>
+
+
+<p>
+
+Add your home appliances and track their electricity consumption.
+
+PowerWise calculates daily usage, monthly units and estimated bills.
+
+</p>
+
+
+</div>
+
+
+
+<div class="col-lg-5 text-center">
+
+
+<img
+
+src="images/appliance-home.png"
+
+class="hero-appliance-img"
+
+alt="Smart Home">
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+<!-- ================= ADD APPLIANCE ================= -->
+
+
+<section class="container my-5">
+
+
+<div class="card appliance-card shadow">
+
+
+<div class="card-body">
+
+
+<h3 class="fw-bold mb-4">
+
+<i class="bi bi-plus-circle-fill text-success"></i>
+
+Add Appliance
+
+</h3>
+
+
+
+<div class="row align-items-center">
+
+
+
+<!-- Image Preview -->
+
+
+<div class="col-lg-4 text-center">
+
+
+<img
+
+id="applianceImage"
+
+src="images/bulb.png"
+
+class="appliance-image"
+
+alt="Appliance">
+
+
+<h5 id="selectedName">
+
+Select Appliance
+
+</h5>
+
+
+</div>
+
+
+
+
+
+<!-- Form -->
+
+
+<div class="col-lg-8">
+
+
+<div class="row g-3">
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+Appliance Type
+
+</label>
+
+
+<select
+
+id="applianceName"
+
+class="form-select">
+
+
+<option value="">
+
+Choose Appliance
+
+</option>
+
+
+<option value="LED Bulb">
+
+💡 LED Bulb
+
+</option>
+
+
+<option value="Fan">
+
+🌀 Fan
+
+</option>
+
+
+<option value="AC">
+
+❄ AC
+
+</option>
+
+
+<option value="TV">
+
+📺 TV
+
+</option>
+
+
+<option value="Refrigerator">
+
+🧊 Refrigerator
+
+</option>
+
+
+<option value="Washing Machine">
+
+🧺 Washing Machine
+
+</option>
+
+
+<option value="Laptop">
+
+💻 Laptop
+
+</option>
+
+
+<option value="Heater">
+
+🔥 Heater
+
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+Power Rating (Watts)
+
+</label>
+
+
+<input
+
+type="number"
+
+id="power"
+
+class="form-control"
+
+readonly>
+
+
+</div>
+
+
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+Quantity
+
+</label>
+
+
+<input
+
+type="number"
+
+id="quantity"
+
+class="form-control"
+
+value="1"
+
+min="1">
+
+
+</div>
+
+
+
+
+
+<div class="col-md-6">
+
+
+<label class="form-label">
+
+Daily Usage (Hours)
+
+</label>
+
+
+<input
+
+type="number"
+
+id="hours"
+
+class="form-control"
+
+placeholder="Example: 5">
+
+
+</div>
+
+
+
+
+
+<div class="col-12">
+
+
+<button
+
+id="addAppliance"
+
+class="btn btn-success w-100">
+
+
+<i class="bi bi-save"></i>
+
+Add Appliance
+
+
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+<!-- ================= APPLIANCE TABLE ================= -->
+
+
+<section class="container mb-5">
+
+
+<div class="card shadow appliance-card">
+
+
+<div class="card-header bg-success text-white">
+
+
+<h4 class="mb-0">
+
+⚡ Added Appliances
+
+</h4>
+
+
+</div>
+
+
+
+<div class="table-responsive">
+
+
+<table class="table table-hover text-center">
+
+
+<thead class="table-success">
+
+
+<tr>
+
+
+<th>
+
+#
+
+</th>
+
+
+<th>
+
+Image
+
+</th>
+
+
+<th>
+
+Appliance
+
+</th>
+
+
+<th>
+
+Power
+
+</th>
+
+
+<th>
+
+Hours
+
+</th>
+
+
+<th>
+
+Daily Units
+
+</th>
+
+
+<th>
+
+Action
+
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="applianceTable">
+
+
+<tr>
+
+
+<td colspan="7">
+
+No appliances added
+
+</td>
+
+
+</tr>
+
+
+</tbody>
+
+
+
+</table>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- Bootstrap JS -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!-- Appliance JS -->
+
+
+<script src="js/appliance.js"></script>
+
+
+
+</body>
+
+
+</html>

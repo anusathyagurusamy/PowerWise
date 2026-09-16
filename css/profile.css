@@ -1,0 +1,571 @@
+/* ==========================================
+   PowerWise Profile Page
+   profile.css
+========================================== */
+
+
+/* ===============================
+   Global
+================================ */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+body{
+
+    background:#f4fff7;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+/* ==========================================
+   Navbar
+========================================== */
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+
+
+.nav-link{
+
+    font-weight:500;
+
+    margin-left:15px;
+
+    transition:.3s;
+
+}
+
+
+
+.nav-link:hover{
+
+    color:#ffc107 !important;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   Hero Section
+================================ */
+
+
+.profile-hero{
+
+
+    min-height:320px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+
+    background-image:
+
+    linear-gradient(
+    rgba(25,135,84,0.75),
+    rgba(25,135,84,0.75)
+    ),
+
+
+    url("../images/profile-hero.png");
+
+
+
+    background-size:cover;
+
+
+    background-position:center;
+
+
+    color:white;
+
+
+}
+
+
+
+.profile-hero h1{
+
+
+    font-size:48px;
+
+
+    font-weight:700;
+
+
+    animation:
+    slideDown 1s ease;
+
+
+}
+
+
+
+.profile-hero p{
+
+
+    font-size:18px;
+
+
+    animation:
+    slideUp 1.2s ease;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   Animations
+================================ */
+
+
+@keyframes slideDown{
+
+
+from{
+
+    opacity:0;
+
+    transform:
+    translateY(-40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+
+}
+
+
+}
+
+
+
+@keyframes slideUp{
+
+
+from{
+
+    opacity:0;
+
+    transform:
+    translateY(40px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   Profile Card
+================================ */
+
+
+.profile-card{
+
+
+    border:none;
+
+
+    border-radius:25px;
+
+
+    overflow:hidden;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.profile-card:hover{
+
+
+    transform:
+    translateY(-10px);
+
+
+    box-shadow:
+    0 15px 35px rgba(25,135,84,.25);
+
+
+}
+
+
+
+
+
+
+
+/* Profile Icon */
+
+
+.profile-icon{
+
+
+    font-size:90px;
+
+
+    color:#198754;
+
+
+    animation:
+
+    floating 3s infinite;
+
+
+}
+
+
+
+
+@keyframes floating{
+
+
+0%,100%{
+
+
+    transform:
+    translateY(0);
+
+}
+
+
+50%{
+
+
+    transform:
+    translateY(-10px);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   User Information
+================================ */
+
+
+.info-box{
+
+
+    background:#f1fff5;
+
+
+    border-radius:15px;
+
+
+    padding:20px;
+
+
+    text-align:left;
+
+
+}
+
+
+
+.info-box p{
+
+
+    font-size:17px;
+
+
+    margin:15px 0;
+
+
+}
+
+
+
+.info-box i{
+
+
+    color:#198754;
+
+
+    margin-right:10px;
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   Budget Card
+================================ */
+
+
+.budget-card{
+
+
+    border:none;
+
+
+    border-radius:25px;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+.budget-card:hover{
+
+
+    transform:
+    scale(1.03);
+
+
+    box-shadow:
+    0 15px 30px rgba(25,135,84,.2);
+
+
+}
+
+
+
+.budget-card h3{
+
+
+    color:#198754;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+
+
+#budgetMessage{
+
+
+    font-weight:600;
+
+
+    color:#198754;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   Action Card
+================================ */
+
+
+.action-card{
+
+
+    border:none;
+
+
+    border-radius:20px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.action-card:hover{
+
+
+    transform:
+    translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   Buttons
+================================ */
+
+
+.btn-success{
+
+
+    background:#198754;
+
+
+    border:none;
+
+
+}
+
+
+
+.btn-success:hover{
+
+
+    background:#146c43;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   Footer
+================================ */
+
+
+footer{
+
+
+    margin-top:50px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   Responsive
+================================ */
+
+
+@media(max-width:768px){
+
+
+
+.navbar-brand{
+
+
+    font-size:24px;
+
+
+}
+
+
+
+.navbar-nav .nav-link{
+
+
+    margin-left:0;
+
+
+    font-size:16px;
+
+
+}
+
+
+
+
+.profile-hero{
+
+
+    min-height:250px;
+
+
+}
+
+
+
+.profile-hero h1{
+
+
+    font-size:35px;
+
+
+}
+
+
+
+}

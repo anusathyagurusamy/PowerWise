@@ -1,0 +1,348 @@
+/* =====================================
+   Google Font
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =====================================
+   Global
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#f5f7fb;
+
+    overflow-x:hidden;
+
+}
+
+/* =====================================
+   Animated Background
+===================================== */
+
+.login-section{
+
+    min-height:100vh;
+
+    background:linear-gradient(-45deg,#198754,#20c997,#66d9a3,#198754);
+
+    background-size:400% 400%;
+
+    animation:gradientMove 10s ease infinite;
+
+}
+
+@keyframes gradientMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* =====================================
+   Left Side
+===================================== */
+
+.hero-side{
+
+    color:white;
+
+    animation:slideLeft 1.2s ease;
+
+}
+
+.hero-icon{
+
+    font-size:140px;
+
+    animation:float 3s ease-in-out infinite;
+
+    color:#ffc107;
+
+    text-shadow:0 0 20px rgba(255,193,7,.5);
+
+}
+
+.hero-text{
+
+    font-size:18px;
+
+    margin-top:20px;
+
+    opacity:.9;
+
+    line-height:1.8;
+
+}
+
+/* =====================================
+   Login Card
+===================================== */
+
+.login-card{
+
+    background:rgba(255,255,255,.95);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    animation:slideRight 1.2s ease;
+
+    transition:.4s;
+
+}
+
+.login-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+}
+
+.login-user{
+
+    font-size:70px;
+
+    color:#198754;
+
+}
+
+/* =====================================
+   Form
+===================================== */
+
+.form-label{
+
+    font-weight:600;
+
+}
+
+.form-control{
+
+    height:50px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    transition:.3s;
+
+}
+
+.form-control:focus{
+
+    border-color:#198754;
+
+    box-shadow:0 0 10px rgba(25,135,84,.25);
+
+}
+
+.input-group-text{
+
+    background:#198754;
+
+    color:white;
+
+    border:none;
+
+}
+
+/* =====================================
+   Buttons
+===================================== */
+
+.login-btn{
+
+    height:50px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(25,135,84,.3);
+
+}
+
+/* =====================================
+   Links
+===================================== */
+
+.forgot-link{
+
+    color:#198754;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.forgot-link:hover{
+
+    color:#146c43;
+
+}
+
+/* =====================================
+   Animations
+===================================== */
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+@keyframes slideLeft{
+
+from{
+
+opacity:0;
+
+transform:translateX(-80px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+@keyframes slideRight{
+
+from{
+
+opacity:0;
+
+transform:translateX(80px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media(max-width:992px){
+
+.hero-side{
+
+margin-bottom:50px;
+
+}
+
+.hero-icon{
+
+font-size:100px;
+
+}
+
+.login-card{
+
+padding:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-side{
+
+text-align:center;
+
+}
+
+.hero-side h1{
+
+font-size:36px;
+
+}
+
+.hero-text{
+
+font-size:16px;
+
+}
+
+.login-card{
+
+padding:25px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-icon{
+
+font-size:80px;
+
+}
+
+.hero-side h1{
+
+font-size:28px;
+
+}
+
+.login-card{
+
+padding:20px;
+
+border-radius:18px;
+
+}
+
+}
